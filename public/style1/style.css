@@ -81,7 +81,7 @@ h3 {
   margin: 20px 0;
   text-decoration: none;
 }
-
+/* content sizing  start */
 div.content {
   display: flex;
   flex-wrap: wrap;
@@ -89,16 +89,21 @@ div.content {
   margin-left: 5%;
   margin-top: 3%;
 }
+/* content sizing end  */
+
 section#about {
   flex: 50%;
 }
+
 h3:before {
+  /* add bullet points on titles on content  */
   content: ".";
 
   color: red;
   width: -1em;
   font-size: 110px;
 }
+
 /* START STYLING FOR COMPETENCIES  */
 
 section#competencies {
@@ -171,4 +176,18 @@ section#hobbies {
 }
 p {
   line-height: 1.2;
+}
+@media only screen and (max-width: 600px) {
+  figure {
+    flex: 90%;
+  }
+  #contact {
+    display: none;
+  }
+  section#competencies {
+    flex: 60%; /* for mobile increase flex */
+  }
+  section#education {
+    flex: 60%;
+  }
 }
