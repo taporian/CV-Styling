@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: white;
+}
+
+/* header styling start  */
+header {
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: flex;
+  padding: 25px;
+
+  background: grey;
+  color: red;
+}
+
+header div {
+  display: flex; /* FOR MOBILE TRY hgroup and figure 10% and 90% keep wrap    */
+  flex-wrap: wrap;
+  margin-left: 10%;
+}
+hgroup {
+  flex: 10%;
+}
+/* header styling end  */
+
+/* contact styling start */
+
+#contact {
+  position: absolute;
+
+  margin-left: 4%;
+  bottom: 640px;
+  left: 600px;
+  height: 170px;
+}
+div.contacts {
+  background: linear-gradient(to left, black 86%, red 14%);
+  width: 800px;
+}
+
+dl {
+  color: white;
+  display: flex;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+dd {
+  margin-left: 10%;
+  color: red;
+}
+.contact-phone a {
+  position: absolute;
+  left: 16%;
+}
+.contact-skype dd {
+  display: none;
+}
+.contact-facebook a {
+  position: absolute;
+  left: 16%;
+}
+dd a {
+  text-decoration: none;
+  color: red;
+}
+#contact h3 {
+  display: none;
+}
+/* contact styling end */
+
+/* add border line under h3 */
+
+h3 {
+  border-bottom: 1px solid rgb(180, 178, 178);
+  display: block;
+  line-height: 40px;
+  list-style-type: none;
+  margin: 20px 0;
+  text-decoration: none;
+}
+
+div.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+section#about {
+  flex: 50%;
+}
+h3:before {
+  content: ".";
+
+  color: red;
+  width: -1em;
+  font-size: 110px;
+}
+/* START STYLING FOR COMPETENCIES  */
+
+section#competencies {
+  flex: 50%; /* for mobile increase flex */
+}
+
+.skill {
+  color: white;
+}
+.skills-primary .skill:nth-of-type(1) {
+  background: linear-gradient(to left, rgb(209, 209, 209) 60%, red 40%);
+  border: 3px solid rgb(209, 209, 209);
+  margin-bottom: 4px;
+}
+.skills-primary .skill:nth-of-type(2) {
+  background: linear-gradient(to left, rgb(209, 209, 209) 80%, red 20%);
+  border: 3px solid rgb(209, 209, 209);
+  margin-bottom: 4px;
+}
+.skills-primary .skill:nth-of-type(3) {
+  background: linear-gradient(to left, rgb(209, 209, 209) 95%, red 5%);
+  border: 3px solid rgb(209, 209, 209);
+}
+.skills-secondary .skill:nth-of-type(1) {
+  background: linear-gradient(
+    to left,
+    rgba(231, 226, 226, 0.986) 50%,
+    rgb(238, 76, 76) 50%
+  );
+  border: 3px solid rgba(231, 226, 226, 0.986);
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.skills-secondary .skill:nth-of-type(2) {
+  background: linear-gradient(
+    to left,
+    rgba(231, 226, 226, 0.986) 65%,
+    rgb(238, 76, 76) 35%
+  );
+  border: 3px solid rgba(231, 226, 226, 0.986);
+  margin-bottom: 4px;
+}
+.skills-secondary .skill:nth-of-type(3) {
+  background: linear-gradient(
+    to left,
+    rgba(231, 226, 226, 0.986) 60%,
+    rgb(238, 76, 76) 40%
+  );
+  border: 3px solid rgba(231, 226, 226, 0.986);
+}
+/* END STYLING FOR COMPETENCIES  */
+h4 {
+  font-weight: 500;
+  color: red;
+}
+.experience-location {
+  color: #d3d3d3;
+}
+.experience-date {
+  color: #d3d3d3;
+}
+section#experiences {
+  flex: 50%;
+}
+section#education {
+  flex: 50%;
+}
+section#hobbies {
+  flex: 50%;
+}
+p {
+  line-height: 1.2;
+}
