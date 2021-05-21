@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: white;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+header {
+  display: flex;
+
+  border-bottom: 1px solid rgb(180, 178, 178);
+  line-height: 40px;
+  list-style-type: none;
+  margin-top: 1px;
+  text-decoration: none;
+}
+header div {
+  display: flex;
+}
+figure {
+  position: absolute;
+  margin-left: 740px;
+  margin-top: 40px;
+  transform: rotate(-20deg);
+}
+h2 {
+  display: none;
+}
+#about h3 {
+  display: none;
+}
+
+div.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section#about {
+  flex: 40%;
+  line-height: 30px;
+  margin-top: 1px;
+}
+/* remove marighin-right for mobile */
+#about p {
+  /* text-align: center;
+  vertical-align: middle;
+  display: table-cell; */
+  display: flex;
+  margin: 0%;
+  margin-right: 590px;
+  font-style: italic;
+  word-spacing: 1px;
+  line-height: 1.6;
+  color: grey;
+}
+
+section#competencies {
+  display: flex;
+  flex-wrap: wrap;
+}
+#competencies h3 {
+  position: absolute;
+  border-right: 2px solid rgb(209, 209, 209);
+  height: 100px;
+  flex: 50%;
+}
+
+div.skill {
+  margin-right: 10px;
+  color: white;
+  background-color: #008080;
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  padding: 10px 70px 10px 5px;
+  margin: 0%;
+}
+
+.skills-primary .skill:nth-of-type(1):after {
+  position: relative;
+  content: "\2605 \2605 \2605";
+  left: 60px;
+
+  white-space: pre;
+  color: white;
+}
+.skills-primary .skill:nth-of-type(2)::after {
+  position: relative;
+  content: "  \2605 \2605";
+  left: 60px;
+  white-space: pre;
+  color: white;
+}
+.skills-primary .skill:nth-of-type(3):after {
+  position: relative;
+  content: "\2605";
+  left: 60px;
+  color: white;
+}
+.skills-secondary .skill:nth-of-type(1):after {
+  position: relative;
+  content: "\2605 \2605 \2605 \2605 \2605";
+  left: 60px;
+  font-size: 10px;
+  color: white;
+}
+.skills-secondary .skill:nth-of-type(2):after {
+  position: relative;
+  content: "\2605 \2605 \2605";
+  margin-left: 10px;
+  left: 60px;
+  font-size: 10px;
+
+  color: white;
+}
+.skills-secondary .skill:nth-of-type(3):after {
+  position: relative;
+  content: "\2605 \2605 \2605 \2605";
+  margin-left: -25px;
+  left: 60px;
+  font-size: 10px;
+  color: white;
+}
+div.skills.skills-primary {
+  display: flex;
+  flex-direction: row;
+  color: aquamarine;
+
+  margin-top: 30px;
+  margin-left: 120px;
+}
+div.skills.skills-secondary {
+  display: flex;
+  flex-direction: row;
+  color: aquamarine;
+  margin-left: 120px;
+}
+
+#experiences {
+  /* flex: 30%; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* remove absolute for mobile */
+#experiences h3 {
+  position: absolute;
+
+  flex: 50%;
+}
+#experiences div.experience {
+  border-left: 2px solid rgb(209, 209, 209);
+  flex: 50%;
+  margin-left: 110px;
+}
+
+section#education {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+#education h3 {
+  position: absolute;
+
+  flex: 50%;
+}
+#education div.experience {
+  border-left: 2px solid rgb(209, 209, 209);
+  flex: 50%;
+  margin-left: 110px;
+}
+
+#hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+}
+#hobbies h3 {
+  position: absolute;
+
+  flex: 50%;
+}
+#hobbies ul {
+  border-left: 2px solid rgb(209, 209, 209);
+  flex: 50%;
+  margin-left: 110px;
+}
+
+#contact h3 {
+  display: none;
+}
+#contact {
+  margin-right: 441px;
+  margin-left: 150px;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+div.contacts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+dl.contact.contact-email {
+  content: url(../images/email.png);
+  margin-right: 30px;
+  width: 100px;
+  height: 100px;
+}
+dl.contact.contact-skype {
+  display: none;
+}
+dl.contact.contact-phone {
+  content: url(../images/phone.png);
+  margin-right: 30px;
+  width: 100px;
+  height: 100px;
+}
+dl.contact.contact-github {
+  content: url(../images/github.png);
+  margin-right: 30px;
+  width: 100px;
+  height: 100px;
+}
+dl.contact.contact-facebook {
+  content: url(../images/facebook.png);
+  width: 100px;
+  height: 100px;
+}
+div.experience-details {
+  display: flex;
+  justify-content: flex-end;
+  color: grey;
+}
+.experience-location:after {
+  content: "  ";
+  white-space: pre;
+}
+p {
+  margin-left: 2%;
+}
+h4 {
+  margin-left: 2%;
+  color: #008080;
+}
