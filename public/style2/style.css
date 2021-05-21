@@ -201,6 +201,8 @@ div.contacts {
 
 dl.contact.contact-email {
   content: url(../images/email.png);
+  cursor: pointer;
+
   margin-right: 10px;
   width: 100px;
   height: 100px;
@@ -210,18 +212,21 @@ dl.contact.contact-skype {
 }
 dl.contact.contact-phone {
   content: url(../images/phone.png);
+  cursor: pointer;
   margin-right: 30px;
   width: 100px;
   height: 100px;
 }
 dl.contact.contact-github {
   content: url(../images/github.png);
+  cursor: pointer;
   margin-right: 100px;
   width: 100px;
   height: 100px;
 }
 dl.contact.contact-facebook {
   content: url(../images/facebook.png);
+  cursor: pointer;
   width: 100px;
   height: 100px;
 }
