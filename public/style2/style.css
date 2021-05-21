@@ -191,8 +191,6 @@ section#education {
   display: none;
 }
 #contact {
-  margin-right: 441px;
-  margin-left: 150px;
   margin-top: 5%;
   margin-bottom: 10%;
 }
@@ -203,7 +201,7 @@ div.contacts {
 
 dl.contact.contact-email {
   content: url(../images/email.png);
-  margin-right: 30px;
+  margin-right: 10px;
   width: 100px;
   height: 100px;
 }
@@ -218,7 +216,7 @@ dl.contact.contact-phone {
 }
 dl.contact.contact-github {
   content: url(../images/github.png);
-  margin-right: 30px;
+  margin-right: 100px;
   width: 100px;
   height: 100px;
 }
@@ -242,4 +240,99 @@ p {
 h4 {
   margin-left: 2%;
   color: #008080;
+}
+
+@media only screen and (max-width: 600px) {
+  #about p {
+    display: flex;
+    margin: 0%;
+
+    font-style: italic;
+    word-spacing: 1px;
+    line-height: 1.6;
+    color: grey;
+  }
+
+  div.skill {
+    margin-right: 10px;
+    color: white;
+    background-color: #008080;
+    border-bottom: 10px solid white;
+    border-right: 10px solid white;
+    padding: 5px 70px 5px 5px;
+    margin: 0%;
+  }
+  .skills-primary .skill:nth-of-type(1):after {
+    content: "\2605 \2605 \2605";
+    left: 60px;
+
+    white-space: pre;
+    color: white;
+  }
+  .skills-primary .skill:nth-of-type(2)::after {
+    content: "  \2605 \2605";
+    left: 60px;
+    white-space: pre;
+    color: white;
+  }
+  .skills-primary .skill:nth-of-type(3):after {
+    content: "\2605";
+    left: 110px;
+    color: white;
+  }
+  .skills-secondary .skill:nth-of-type(1):after {
+    content: "\2605 \2605 \2605 \2605 \2605";
+    left: 60px;
+    font-size: 10px;
+    color: white;
+  }
+  .skills-secondary .skill:nth-of-type(2):after {
+    content: "\2605 \2605 \2605";
+    margin-left: 10px;
+    left: 60px;
+    font-size: 10px;
+
+    color: white;
+  }
+  .skills-secondary .skill:nth-of-type(3):after {
+    content: "\2605 \2605 \2605 \2605";
+    margin-left: -25px;
+    left: 110px;
+    font-size: 10px;
+    color: white;
+  }
+
+  h3 {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #competencies h3 {
+    position: relative;
+    border-right: 2px solid white;
+  }
+  #experiences h3 {
+    position: relative;
+  }
+  #education h3 {
+    position: relative;
+  }
+  #hobbies h3 {
+    position: relative;
+  }
+  #experiences div.experience {
+    border-left: 2px solid white;
+  }
+  #education div.experience {
+    border-left: 2px solid white;
+  }
+  #hobbies ul {
+    border-left: 2px solid white;
+  }
+  figure {
+    display: none;
+  }
 }
